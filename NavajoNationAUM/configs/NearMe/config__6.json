@@ -1,0 +1,2745 @@
+{
+  "fontColor": "#000000",
+  "searchLayers": [
+    {
+      "url": "https://gispub.epa.gov/arcgis/rest/services/Region9/NavajoNationAUMSiteScreening/MapServer/42",
+      "geometryType": "esriGeometryPoint",
+      "id": "NavajoNationAUMSiteScreeningContact_8355_42",
+      "layerId": "42",
+      "baseURL": "https://gispub.epa.gov/arcgis/rest/services/Region9/NavajoNationAUMSiteScreening/MapServer/",
+      "isMapServer": true,
+      "visibility": false,
+      "title": "Phase 1 Trust Mines",
+      "popupInfo": {
+        "title": "{Mine_Name}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Shape",
+            "label": "Shape",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "EPA_Mine_Site_identification_nu",
+            "label": "Mine ID",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox",
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            }
+          },
+          {
+            "fieldName": "Mine_Name",
+            "label": "Mine Name",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Alias_Mine_Names",
+            "label": "Mine Aliases",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "MineStatus",
+            "label": "Mine Status",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Region",
+            "label": "AUM Region",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "LinktoEPA",
+            "label": "Link to Webpage for",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "SiteScreenReport",
+            "label": "Site Screening Report",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "expression/expr0",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr1",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr2",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr3",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr4",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr5",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr6",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr7",
+            "visible": true
+          },
+          {
+            "fieldName": "RemovalSiteEvalReport",
+            "label": "Removal Site Evaluation Report",
+            "isEditable": false,
+            "visible": false,
+            "stringFieldOption": "textbox"
+          }
+        ],
+        "description": "<div>\n<b>{expression/expr0}<span>Other names that the mine is referred to.</span></b></div> {Alias_Mine_Names}<br />\n<div>\n<b>{expression/expr1}<span>Identifying if agreement to assess and cleanup the mine was through a enforcement action with a potentially responsible party or the name of the settlement or consent decree.</span></b></div> {MineStatus}<br />\n<div>\n<b>{expression/expr4}<span>The abandoned uranium mines are scattered throughout the Navajo Nation. Based on the extent of the cleanup work and locations of the mines sites, EPA refers to the different regions where there are abandoned uranium mines as 'Abandoned Uranium Mine Regions' and divided it up into 6 different areas (Western, Northern, North Central, Central, Southern, and Eastern).</span></b></div> {Region}<br />\n<b>{expression/expr5}</b> {LinktoEPA}<br />\n<div>\n<b>{expression/expr6}<span>Preliminary site screen reports of the abandoned uranium mines on Navajo Nation were carried out from 2008-2011. The purpose of the site screen reports was to determine the status and location of identified AUM sites on Navajo Nation.</span></b></div> {SiteScreenReport}<br />\n<div>\n<b>{expression/expr7}<span>A report which provide information needed to determine the extent of contamination at a mine site.</span></b></div> {RemovalSiteEvalReport}",
+        "showAttachments": true,
+        "expressionInfos": [
+          {
+            "name": "expr0",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.Alias_Mine_Names), \"\", \"Mine Aliases:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr1",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.MineStatus), \"\", \"Mine Status:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr2",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.PRPEnforceSettle), \"\", \"Enforcement Action:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr3",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.EnfEntity), \"\", \"Potentially Responsible Party:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr4",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.Region), \"\", \"AUM Region:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr5",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.LinktoEPA), \"\", \"Link to Webpage:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr6",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.SiteScreenReport), \"\", \"Site Screening Report:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr7",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.RemovalSiteEvalReport), \"\", \"Removal Site Evaluation Report:  \")\n",
+            "returnType": "string"
+          }
+        ],
+        "relatedRecordsInfo": {
+          "showRelatedRecords": false
+        },
+        "mediaInfos": []
+      }
+    },
+    {
+      "url": "https://gispub.epa.gov/arcgis/rest/services/Region9/NavajoNationAUMSiteScreening/MapServer/43",
+      "geometryType": "esriGeometryPoint",
+      "id": "NavajoNationAUMSiteScreeningContact_8355_43",
+      "layerId": "43",
+      "baseURL": "https://gispub.epa.gov/arcgis/rest/services/Region9/NavajoNationAUMSiteScreening/MapServer/",
+      "isMapServer": true,
+      "visibility": false,
+      "title": "Phase 2 RSE Trust Mines",
+      "popupInfo": {
+        "title": "{Mine_Name}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Shape",
+            "label": "Shape",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "EPA_Mine_Site_identification_nu",
+            "label": "Mine ID",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox",
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            }
+          },
+          {
+            "fieldName": "Mine_Name",
+            "label": "Mine Name",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Alias_Mine_Names",
+            "label": "Mine Aliases",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "MineStatus",
+            "label": "Mine Status",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Region",
+            "label": "AUM Region",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "LinktoEPA",
+            "label": "Link to Webpage for",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "SiteScreenReport",
+            "label": "Site Screening Report",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "expression/expr0",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr1",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr2",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr3",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr4",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr5",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr6",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr7",
+            "visible": true
+          },
+          {
+            "fieldName": "RemovalSiteEvalReport",
+            "label": "Removal Site Evaluation Report",
+            "isEditable": false,
+            "visible": false,
+            "stringFieldOption": "textbox"
+          }
+        ],
+        "description": "<div>\n<b>{expression/expr0}<span>Other names that the mine is referred to.</span></b></div> {Alias_Mine_Names}<br />\n<div>\n<b>{expression/expr1}<span>Identifying if agreement to assess and cleanup the mine was through a enforcement action with a potentially responsible party or the name of the settlement or consent decree.</span></b></div> {MineStatus}<br />\n<div>\n<b>{expression/expr4}<span>The abandoned uranium mines are scattered throughout the Navajo Nation. Based on the extent of the cleanup work and locations of the mines sites, EPA refers to the different regions where there are abandoned uranium mines as 'Abandoned Uranium Mine Regions' and divided it up into 6 different areas (Western, Northern, North Central, Central, Southern, and Eastern).</span></b></div> {Region}<br />\n<b>{expression/expr5}</b> {LinktoEPA}<br />\n<div>\n<b>{expression/expr6}<span>Preliminary site screen reports of the abandoned uranium mines on Navajo Nation were carried out from 2008-2011. The purpose of the site screen reports was to determine the status and location of identified AUM sites on Navajo Nation.</span></b></div> {SiteScreenReport}<br />\n<div>\n<b>{expression/expr7}<span>A report which provide information needed to determine the extent of contamination at a mine site.</span></b></div> {RemovalSiteEvalReport}",
+        "showAttachments": true,
+        "expressionInfos": [
+          {
+            "name": "expr0",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.Alias_Mine_Names), \"\", \"Mine Aliases:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr1",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.MineStatus), \"\", \"Mine Status:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr2",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.PRPEnforceSettle), \"\", \"Enforcement Action:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr3",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.EnfEntity), \"\", \"Potentially Responsible Party:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr4",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.Region), \"\", \"AUM Region:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr5",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.LinktoEPA), \"\", \"Link to Webpage:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr6",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.SiteScreenReport), \"\", \"Site Screening Report:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr7",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.RemovalSiteEvalReport), \"\", \"Removal Site Evaluation Report:  \")\n",
+            "returnType": "string"
+          }
+        ],
+        "mediaInfos": []
+      }
+    },
+    {
+      "url": "https://gispub.epa.gov/arcgis/rest/services/Region9/NavajoNationAUMSiteScreening/MapServer/41",
+      "geometryType": "esriGeometryPoint",
+      "id": "NavajoNationAUMSiteScreeningContact_8355_41",
+      "layerId": "41",
+      "baseURL": "https://gispub.epa.gov/arcgis/rest/services/Region9/NavajoNationAUMSiteScreening/MapServer/",
+      "isMapServer": true,
+      "visibility": true,
+      "title": "Tronox Settlement Mines",
+      "popupInfo": {
+        "title": "{Mine_Name}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "EPA_Mine_Site_identification_nu",
+            "label": "Mine ID",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox",
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            }
+          },
+          {
+            "fieldName": "Shape",
+            "label": "Shape",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Mine_Name",
+            "label": "Mine Name",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Alias_Mine_Names",
+            "label": "Mine Aliases",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "MineStatus",
+            "label": "Mine Status",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "PRPEnforceSettle",
+            "label": "Enforcement Action",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "EnfEntity",
+            "label": "Potentially Responsible Party",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Region",
+            "label": "AUM Region",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "LinktoEPA",
+            "label": "Link to Webpage for",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "SiteScreenReport",
+            "label": "Site Screening Report",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "expression/expr0",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr1",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr2",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr3",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr4",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr5",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr6",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr7",
+            "visible": true
+          },
+          {
+            "fieldName": "RemovalSiteEvalReport",
+            "label": "Removal Site Evaluation Report",
+            "isEditable": false,
+            "visible": false,
+            "stringFieldOption": "textbox"
+          }
+        ],
+        "description": "<div>\n<b>{expression/expr0}<span>Other names that the mine is referred to.</span></b></div> {Alias_Mine_Names}<br />\n<div>\n<b>{expression/expr1}<span>Identifying if agreement to assess and cleanup the mine was through a enforcement action with a potentially responsible party or the name of the settlement or consent decree.</span></b></div> {MineStatus}<br />\n<b>{expression/expr2}</b> {PRPEnforceSettle}<br />\n<div>\n<b>{expression/expr3}<span>Any individual or company (including owners, operators, transporters or generators) potentially responsible for, or contributing to a spill or other contamination at a Superfund site. Whenever possible, through administrative and legal actions, EPA requires PRPs to clean up hazardous sites they have contaminated.</span></b></div> {EnfEntity}<br />\n<div>\n<b>{expression/expr4}<span>The abandoned uranium mines are scattered throughout the Navajo Nation. Based on the extent of the cleanup work and locations of the mines sites, EPA refers to the different regions where there are abandoned uranium mines as 'Abandoned Uranium Mine Regions' and divided it up into 6 different areas (Western, Northern, North Central, Central, Southern, and Eastern).</span></b></div> {Region}<br />\n<b>{expression/expr5}</b> {LinktoEPA}<br />\n<div>\n<b>{expression/expr6}<span>Preliminary site screen reports of the abandoned uranium mines on Navajo Nation were carried out from 2008-2011. The purpose of the site screen reports was to determine the status and location of identified AUM sites on Navajo Nation.</span></b></div> {SiteScreenReport}<br />\n<div>\n<b>{expression/expr7}<span>A report which provide information needed to determine the extent of contamination at a mine site.</span></b></div> {RemovalSiteEvalReport}",
+        "showAttachments": true,
+        "expressionInfos": [
+          {
+            "name": "expr0",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.Alias_Mine_Names), \"\", \"Mine Aliases:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr1",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.MineStatus), \"\", \"Mine Status:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr2",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.PRPEnforceSettle), \"\", \"Enforcement Action:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr3",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.EnfEntity), \"\", \"Potentially Responsible Party:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr4",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.Region), \"\", \"AUM Region:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr5",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.LinktoEPA), \"\", \"Link to Webpage:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr6",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.SiteScreenReport), \"\", \"Site Screening Report:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr7",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.RemovalSiteEvalReport), \"\", \"Removal Site Evaluation Report:  \")\n",
+            "returnType": "string"
+          }
+        ],
+        "relatedRecordsInfo": {
+          "showRelatedRecords": false
+        },
+        "mediaInfos": []
+      }
+    },
+    {
+      "url": "https://gispub.epa.gov/arcgis/rest/services/Region9/NavajoNationAUMSiteScreening/MapServer/72",
+      "geometryType": "esriGeometryPoint",
+      "id": "NavajoNationAUMSiteScreeningContact_8355_72",
+      "layerId": "72",
+      "baseURL": "https://gispub.epa.gov/arcgis/rest/services/Region9/NavajoNationAUMSiteScreening/MapServer/",
+      "isMapServer": true,
+      "visibility": false,
+      "title": "Babbitt Ranches",
+      "popupInfo": {
+        "title": "{Mine_Name}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Shape",
+            "label": "Shape",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "EPA_Mine_Site_identification_nu",
+            "label": "Mine ID",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox",
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            }
+          },
+          {
+            "fieldName": "Mine_Name",
+            "label": "Mine Name",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Alias_Mine_Names",
+            "label": "Mine Aliases",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "MineStatus",
+            "label": "Mine Status",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "PRPEnforceSettle",
+            "label": "Enforcement Action",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "EnfEntity",
+            "label": "Potentially Responsible Party",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Region",
+            "label": "AUM Region",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "LinktoEPA",
+            "label": "Link to Webpage for",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "SiteScreenReport",
+            "label": "Site Screening Report",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "expression/expr0",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr1",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr2",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr3",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr4",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr5",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr6",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr7",
+            "visible": true
+          },
+          {
+            "fieldName": "RemovalSiteEvalReport",
+            "label": "Removal Site Evaluation Report",
+            "isEditable": false,
+            "visible": false,
+            "stringFieldOption": "textbox"
+          }
+        ],
+        "description": "<div>\n<b>{expression/expr0}<span>Other names that the mine is referred to.</span></b></div> {Alias_Mine_Names}<br />\n<div>\n<b>{expression/expr1}<span>Identifying if agreement to assess and cleanup the mine was through a enforcement action with a potentially responsible party or the name of the settlement or consent decree.</span></b></div> {MineStatus}<br />\n<b>{expression/expr2}</b> {PRPEnforceSettle}<br />\n<div>\n<b>{expression/expr3}<span>Any individual or company (including owners, operators, transporters or generators) potentially responsible for, or contributing to a spill or other contamination at a Superfund site. Whenever possible, through administrative and legal actions, EPA requires PRPs to clean up hazardous sites they have contaminated.</span></b></div> {EnfEntity}<br />\n<div>\n<b>{expression/expr4}<span>The abandoned uranium mines are scattered throughout the Navajo Nation. Based on the extent of the cleanup work and locations of the mines sites, EPA refers to the different regions where there are abandoned uranium mines as 'Abandoned Uranium Mine Regions' and divided it up into 6 different areas (Western, Northern, North Central, Central, Southern, and Eastern).</span></b></div> {Region}<br />\n<b>{expression/expr5}</b> {LinktoEPA}<br />\n<div>\n<b>{expression/expr6}<span>Preliminary site screen reports of the abandoned uranium mines on Navajo Nation were carried out from 2008-2011. The purpose of the site screen reports was to determine the status and location of identified AUM sites on Navajo Nation.</span></b></div> {SiteScreenReport}<br />\n<div>\n<b>{expression/expr7}<span>A report which provide information needed to determine the extent of contamination at a mine site.</span></b></div> {RemovalSiteEvalReport}",
+        "showAttachments": true,
+        "expressionInfos": [
+          {
+            "name": "expr0",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.Alias_Mine_Names), \"\", \"Mine Aliases:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr1",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.MineStatus), \"\", \"Mine Status:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr2",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.PRPEnforceSettle), \"\", \"Enforcement Action:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr3",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.EnfEntity), \"\", \"Potentially Responsible Party:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr4",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.Region), \"\", \"AUM Region:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr5",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.LinktoEPA), \"\", \"Link to Webpage:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr6",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.SiteScreenReport), \"\", \"Site Screening Report:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr7",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.RemovalSiteEvalReport), \"\", \"Removal Site Evaluation Report:  \")\n",
+            "returnType": "string"
+          }
+        ],
+        "mediaInfos": []
+      }
+    },
+    {
+      "url": "https://gispub.epa.gov/arcgis/rest/services/Region9/NavajoNationAUMSiteScreening/MapServer/81",
+      "geometryType": "esriGeometryPoint",
+      "id": "NavajoNationAUMSiteScreeningContact_8355_81",
+      "layerId": "81",
+      "baseURL": "https://gispub.epa.gov/arcgis/rest/services/Region9/NavajoNationAUMSiteScreening/MapServer/",
+      "isMapServer": true,
+      "visibility": false,
+      "title": "BNSF Railway",
+      "popupInfo": {
+        "title": "{Mine_Name}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Shape",
+            "label": "Shape",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "EPA_Mine_Site_identification_nu",
+            "label": "Mine ID",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox",
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            }
+          },
+          {
+            "fieldName": "Mine_Name",
+            "label": "Mine Name",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Alias_Mine_Names",
+            "label": "Mine Aliases",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "MineStatus",
+            "label": "Mine Status",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "PRPEnforceSettle",
+            "label": "Enforcement Action",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "EnfEntity",
+            "label": "Potentially Responsible Party",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Region",
+            "label": "AUM Region",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "LinktoEPA",
+            "label": "Link to Webpage for",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "SiteScreenReport",
+            "label": "Site Screening Report",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "expression/expr0",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr1",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr2",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr3",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr4",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr5",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr6",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr7",
+            "visible": true
+          },
+          {
+            "fieldName": "RemovalSiteEvalReport",
+            "label": "Removal Site Evaluation Report",
+            "isEditable": false,
+            "visible": false,
+            "stringFieldOption": "textbox"
+          }
+        ],
+        "description": "<div>\n<b>{expression/expr0}<span>Other names that the mine is referred to.</span></b></div> {Alias_Mine_Names}<br />\n<div>\n<b>{expression/expr1}<span>Identifying if agreement to assess and cleanup the mine was through a enforcement action with a potentially responsible party or the name of the settlement or consent decree.</span></b></div> {MineStatus}<br />\n<b>{expression/expr2}</b> {PRPEnforceSettle}<br />\n<div>\n<b>{expression/expr3}<span>Any individual or company (including owners, operators, transporters or generators) potentially responsible for, or contributing to a spill or other contamination at a Superfund site. Whenever possible, through administrative and legal actions, EPA requires PRPs to clean up hazardous sites they have contaminated.</span></b></div> {EnfEntity}<br />\n<div>\n<b>{expression/expr4}<span>The abandoned uranium mines are scattered throughout the Navajo Nation. Based on the extent of the cleanup work and locations of the mines sites, EPA refers to the different regions where there are abandoned uranium mines as 'Abandoned Uranium Mine Regions' and divided it up into 6 different areas (Western, Northern, North Central, Central, Southern, and Eastern).</span></b></div> {Region}<br />\n<b>{expression/expr5}</b> {LinktoEPA}<br />\n<div>\n<b>{expression/expr6}<span>Preliminary site screen reports of the abandoned uranium mines on Navajo Nation were carried out from 2008-2011. The purpose of the site screen reports was to determine the status and location of identified AUM sites on Navajo Nation.</span></b></div> {SiteScreenReport}<br />\n<div>\n<b>{expression/expr7}<span>A report which provide information needed to determine the extent of contamination at a mine site.</span></b></div> {RemovalSiteEvalReport}",
+        "showAttachments": true,
+        "expressionInfos": [
+          {
+            "name": "expr0",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.Alias_Mine_Names), \"\", \"Mine Aliases:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr1",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.MineStatus), \"\", \"Mine Status:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr2",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.PRPEnforceSettle), \"\", \"Enforcement Action:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr3",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.EnfEntity), \"\", \"Potentially Responsible Party:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr4",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.Region), \"\", \"AUM Region:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr5",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.LinktoEPA), \"\", \"Link to Webpage:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr6",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.SiteScreenReport), \"\", \"Site Screening Report:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr7",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.RemovalSiteEvalReport), \"\", \"Removal Site Evaluation Report:  \")\n",
+            "returnType": "string"
+          }
+        ],
+        "mediaInfos": []
+      }
+    },
+    {
+      "url": "https://gispub.epa.gov/arcgis/rest/services/Region9/NavajoNationAUMSiteScreening/MapServer/80",
+      "geometryType": "esriGeometryPoint",
+      "id": "NavajoNationAUMSiteScreeningContact_8355_80",
+      "layerId": "80",
+      "baseURL": "https://gispub.epa.gov/arcgis/rest/services/Region9/NavajoNationAUMSiteScreening/MapServer/",
+      "isMapServer": true,
+      "visibility": false,
+      "title": "Chevron Corporation",
+      "popupInfo": {
+        "title": "{Mine_Name}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Shape",
+            "label": "Shape",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "EPA_Mine_Site_identification_nu",
+            "label": "Mine ID",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox",
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            }
+          },
+          {
+            "fieldName": "Mine_Name",
+            "label": "Mine Name",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Alias_Mine_Names",
+            "label": "Mine Aliases",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "MineStatus",
+            "label": "Mine Status",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "PRPEnforceSettle",
+            "label": "Enforcement Action",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "EnfEntity",
+            "label": "Potentially Responsible Party",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Region",
+            "label": "AUM Region",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "LinktoEPA",
+            "label": "Link to Webpage for",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "SiteScreenReport",
+            "label": "Site Screening Report",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "expression/expr0",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr1",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr2",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr3",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr4",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr5",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr6",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr7",
+            "visible": true
+          },
+          {
+            "fieldName": "RemovalSiteEvalReport",
+            "label": "Removal Site Evaluation Report",
+            "isEditable": false,
+            "visible": false,
+            "stringFieldOption": "textbox"
+          }
+        ],
+        "description": "<div>\n<b>{expression/expr0}<span>Other names that the mine is referred to.</span></b></div> {Alias_Mine_Names}<br />\n<div>\n<b>{expression/expr1}<span>Identifying if agreement to assess and cleanup the mine was through a enforcement action with a potentially responsible party or the name of the settlement or consent decree.</span></b></div> {MineStatus}<br />\n<b>{expression/expr2}</b> {PRPEnforceSettle}<br />\n<div>\n<b>{expression/expr3}<span>Any individual or company (including owners, operators, transporters or generators) potentially responsible for, or contributing to a spill or other contamination at a Superfund site. Whenever possible, through administrative and legal actions, EPA requires PRPs to clean up hazardous sites they have contaminated.</span></b></div> {EnfEntity}<br />\n<div>\n<b>{expression/expr4}<span>The abandoned uranium mines are scattered throughout the Navajo Nation. Based on the extent of the cleanup work and locations of the mines sites, EPA refers to the different regions where there are abandoned uranium mines as 'Abandoned Uranium Mine Regions' and divided it up into 6 different areas (Western, Northern, North Central, Central, Southern, and Eastern).</span></b></div> {Region}<br />\n<b>{expression/expr5}</b> {LinktoEPA}<br />\n<div>\n<b>{expression/expr6}<span>Preliminary site screen reports of the abandoned uranium mines on Navajo Nation were carried out from 2008-2011. The purpose of the site screen reports was to determine the status and location of identified AUM sites on Navajo Nation.</span></b></div> {SiteScreenReport}<br />\n<div>\n<b>{expression/expr7}<span>A report which provide information needed to determine the extent of contamination at a mine site.</span></b></div> {RemovalSiteEvalReport}",
+        "showAttachments": true,
+        "expressionInfos": [
+          {
+            "name": "expr0",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.Alias_Mine_Names), \"\", \"Mine Aliases:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr1",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.MineStatus), \"\", \"Mine Status:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr2",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.PRPEnforceSettle), \"\", \"Enforcement Action:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr3",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.EnfEntity), \"\", \"Potentially Responsible Party:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr4",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.Region), \"\", \"AUM Region:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr5",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.LinktoEPA), \"\", \"Link to Webpage:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr6",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.SiteScreenReport), \"\", \"Site Screening Report:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr7",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.RemovalSiteEvalReport), \"\", \"Removal Site Evaluation Report:  \")\n",
+            "returnType": "string"
+          }
+        ],
+        "mediaInfos": []
+      }
+    },
+    {
+      "url": "https://gispub.epa.gov/arcgis/rest/services/Region9/NavajoNationAUMSiteScreening/MapServer/79",
+      "geometryType": "esriGeometryPoint",
+      "id": "NavajoNationAUMSiteScreeningContact_8355_79",
+      "layerId": "79",
+      "baseURL": "https://gispub.epa.gov/arcgis/rest/services/Region9/NavajoNationAUMSiteScreening/MapServer/",
+      "isMapServer": true,
+      "visibility": true,
+      "title": "Cyprus Amax Minerals Company",
+      "popupInfo": {
+        "title": "{Mine_Name}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Shape",
+            "label": "Shape",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Mine_Name",
+            "label": "Mine Name",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Alias_Mine_Names",
+            "label": "Mine Aliases",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "MineStatus",
+            "label": "Mine Status",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "PRPEnforceSettle",
+            "label": "Enforcement Action",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "EnfEntity",
+            "label": "Potentially Responsible Party",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Region",
+            "label": "AUM Region",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "LinktoEPA",
+            "label": "Link to Webpage for",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "SiteScreenReport",
+            "label": "Site Screening Report",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "expression/expr0",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr1",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr2",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr3",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr4",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr5",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr6",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr7",
+            "visible": true
+          },
+          {
+            "fieldName": "RemovalSiteEvalReport",
+            "label": "Removal Site Evaluation Report",
+            "isEditable": false,
+            "visible": false,
+            "stringFieldOption": "textbox"
+          }
+        ],
+        "description": "<div>\n<b>{expression/expr0}<span>Other names that the mine is referred to.</span></b></div> {Alias_Mine_Names}<br />\n<div>\n<b>{expression/expr1}<span>Identifying if agreement to assess and cleanup the mine was through a enforcement action with a potentially responsible party or the name of the settlement or consent decree.</span></b></div> {MineStatus}<br />\n<b>{expression/expr2}</b> <div>{PRPEnforceSettle}<span style='left:unset;right:-80%;width:220px'>Judicial agreement between the federal government and the potentially responsible parties fully or partially settling a claim under CERCLA. The agreement may be for response work, cost recovery, or both.</span></div><br />\n<div>\n<b>{expression/expr3}<span>Any individual or company (including owners, operators, transporters or generators) potentially responsible for, or contributing to a spill or other contamination at a Superfund site. Whenever possible, through administrative and legal actions, EPA requires PRPs to clean up hazardous sites they have contaminated.</span></b></div> {EnfEntity}<br />\n<div>\n<b>{expression/expr4}<span>The abandoned uranium mines are scattered throughout the Navajo Nation. Based on the extent of the cleanup work and locations of the mines sites, EPA refers to the different regions where there are abandoned uranium mines as 'Abandoned Uranium Mine Regions' and divided it up into 6 different areas (Western, Northern, North Central, Central, Southern, and Eastern).</span></b></div> {Region}<br />\n<b>{expression/expr5}</b> {LinktoEPA}<br />\n<div>\n<b>{expression/expr6}<span>Preliminary site screen reports of the abandoned uranium mines on Navajo Nation were carried out from 2008-2011. The purpose of the site screen reports was to determine the status and location of identified AUM sites on Navajo Nation.</span></b></div> {SiteScreenReport}<br />\n<div>\n<b>{expression/expr7}<span>A report which provide information needed to determine the extent of contamination at a mine site.</span></b></div> {RemovalSiteEvalReport}",
+        "showAttachments": true,
+        "expressionInfos": [
+          {
+            "name": "expr0",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.Alias_Mine_Names), \"\", \"Mine Aliases:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr1",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.MineStatus), \"\", \"Mine Status:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr2",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.PRPEnforceSettle), \"\", \"Enforcement Action:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr3",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.EnfEntity), \"\", \"Potentially Responsible Party:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr4",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.Region), \"\", \"AUM Region:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr5",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.LinktoEPA), \"\", \"Link to Webpage:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr6",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.SiteScreenReport), \"\", \"Site Screening Report:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr7",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.RemovalSiteEvalReport), \"\", \"Removal Site Evaluation Report:  \")\n",
+            "returnType": "string"
+          }
+        ],
+        "mediaInfos": []
+      }
+    },
+    {
+      "url": "https://gispub.epa.gov/arcgis/rest/services/Region9/NavajoNationAUMSiteScreening/MapServer/78",
+      "geometryType": "esriGeometryPoint",
+      "id": "NavajoNationAUMSiteScreeningContact_8355_78",
+      "layerId": "78",
+      "baseURL": "https://gispub.epa.gov/arcgis/rest/services/Region9/NavajoNationAUMSiteScreening/MapServer/",
+      "isMapServer": true,
+      "visibility": false,
+      "title": "El Paso Natural Gas",
+      "popupInfo": {
+        "title": "{Mine_Name}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Shape",
+            "label": "Shape",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "EPA_Mine_Site_identification_nu",
+            "label": "Mine ID",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox",
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            }
+          },
+          {
+            "fieldName": "Mine_Name",
+            "label": "Mine Name",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Alias_Mine_Names",
+            "label": "Mine Aliases",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "MineStatus",
+            "label": "Mine Status",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "PRPEnforceSettle",
+            "label": "Enforcement Action",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "EnfEntity",
+            "label": "Potentially Responsible Party",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Region",
+            "label": "AUM Region",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "LinktoEPA",
+            "label": "Link to Webpage for",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "SiteScreenReport",
+            "label": "Site Screening Report",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "expression/expr0",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr1",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr2",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr3",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr4",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr5",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr6",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr7",
+            "visible": true
+          },
+          {
+            "fieldName": "RemovalSiteEvalReport",
+            "label": "Removal Site Evaluation Report",
+            "isEditable": false,
+            "visible": false,
+            "stringFieldOption": "textbox"
+          }
+        ],
+        "description": "<div>\n<b>{expression/expr0}<span>Other names that the mine is referred to.</span></b></div> {Alias_Mine_Names}<br />\n<div>\n<b>{expression/expr1}<span>Identifying if agreement to assess and cleanup the mine was through a enforcement action with a potentially responsible party or the name of the settlement or consent decree.</span></b></div> {MineStatus}<br />\n<b>{expression/expr2}</b> {PRPEnforceSettle}<br />\n<div>\n<b>{expression/expr3}<span>Any individual or company (including owners, operators, transporters or generators) potentially responsible for, or contributing to a spill or other contamination at a Superfund site. Whenever possible, through administrative and legal actions, EPA requires PRPs to clean up hazardous sites they have contaminated.</span></b></div> {EnfEntity}<br />\n<div>\n<b>{expression/expr4}<span>The abandoned uranium mines are scattered throughout the Navajo Nation. Based on the extent of the cleanup work and locations of the mines sites, EPA refers to the different regions where there are abandoned uranium mines as 'Abandoned Uranium Mine Regions' and divided it up into 6 different areas (Western, Northern, North Central, Central, Southern, and Eastern).</span></b></div> {Region}<br />\n<b>{expression/expr5}</b> {LinktoEPA}<br />\n<div>\n<b>{expression/expr6}<span>Preliminary site screen reports of the abandoned uranium mines on Navajo Nation were carried out from 2008-2011. The purpose of the site screen reports was to determine the status and location of identified AUM sites on Navajo Nation.</span></b></div> {SiteScreenReport}<br />\n<div>\n<b>{expression/expr7}<span>A report which provide information needed to determine the extent of contamination at a mine site.</span></b></div> {RemovalSiteEvalReport}",
+        "showAttachments": true,
+        "expressionInfos": [
+          {
+            "name": "expr0",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.Alias_Mine_Names), \"\", \"Mine Aliases:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr1",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.MineStatus), \"\", \"Mine Status:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr2",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.PRPEnforceSettle), \"\", \"Enforcement Action:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr3",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.EnfEntity), \"\", \"Potentially Responsible Party:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr4",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.Region), \"\", \"AUM Region:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr5",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.LinktoEPA), \"\", \"Link to Webpage:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr6",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.SiteScreenReport), \"\", \"Site Screening Report:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr7",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.RemovalSiteEvalReport), \"\", \"Removal Site Evaluation Report:  \")\n",
+            "returnType": "string"
+          }
+        ],
+        "mediaInfos": []
+      }
+    },
+    {
+      "url": "https://gispub.epa.gov/arcgis/rest/services/Region9/NavajoNationAUMSiteScreening/MapServer/77",
+      "geometryType": "esriGeometryPoint",
+      "id": "NavajoNationAUMSiteScreeningContact_8355_77",
+      "layerId": "77",
+      "baseURL": "https://gispub.epa.gov/arcgis/rest/services/Region9/NavajoNationAUMSiteScreening/MapServer/",
+      "isMapServer": true,
+      "visibility": false,
+      "title": "EnPro Holdings",
+      "popupInfo": {
+        "title": "{Mine_Name}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Shape",
+            "label": "Shape",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "EPA_Mine_Site_identification_nu",
+            "label": "Mine ID",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox",
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            }
+          },
+          {
+            "fieldName": "Mine_Name",
+            "label": "Mine Name",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Alias_Mine_Names",
+            "label": "Mine Aliases",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "MineStatus",
+            "label": "Mine Status",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "PRPEnforceSettle",
+            "label": "Enforcement Action",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "EnfEntity",
+            "label": "Potentially Responsible Party",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Region",
+            "label": "AUM Region",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "LinktoEPA",
+            "label": "Link to Webpage for",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "SiteScreenReport",
+            "label": "Site Screening Report",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "expression/expr0",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr1",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr2",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr3",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr4",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr5",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr6",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr7",
+            "visible": true
+          },
+          {
+            "fieldName": "RemovalSiteEvalReport",
+            "label": "Removal Site Evaluation Report",
+            "isEditable": false,
+            "visible": false,
+            "stringFieldOption": "textbox"
+          }
+        ],
+        "description": "<div>\n<b>{expression/expr0}<span>Other names that the mine is referred to.</span></b></div> {Alias_Mine_Names}<br />\n<div>\n<b>{expression/expr1}<span>Identifying if agreement to assess and cleanup the mine was through a enforcement action with a potentially responsible party or the name of the settlement or consent decree.</span></b></div> {MineStatus}<br />\n<b>{expression/expr2}</b> {PRPEnforceSettle}<br />\n<div>\n<b>{expression/expr3}<span>Any individual or company (including owners, operators, transporters or generators) potentially responsible for, or contributing to a spill or other contamination at a Superfund site. Whenever possible, through administrative and legal actions, EPA requires PRPs to clean up hazardous sites they have contaminated.</span></b></div> {EnfEntity}<br />\n<div>\n<b>{expression/expr4}<span>The abandoned uranium mines are scattered throughout the Navajo Nation. Based on the extent of the cleanup work and locations of the mines sites, EPA refers to the different regions where there are abandoned uranium mines as 'Abandoned Uranium Mine Regions' and divided it up into 6 different areas (Western, Northern, North Central, Central, Southern, and Eastern).</span></b></div> {Region}<br />\n<b>{expression/expr5}</b> {LinktoEPA}<br />\n<div>\n<b>{expression/expr6}<span>Preliminary site screen reports of the abandoned uranium mines on Navajo Nation were carried out from 2008-2011. The purpose of the site screen reports was to determine the status and location of identified AUM sites on Navajo Nation.</span></b></div> {SiteScreenReport}<br />\n<div>\n<b>{expression/expr7}<span>A report which provide information needed to determine the extent of contamination at a mine site.</span></b></div> {RemovalSiteEvalReport}",
+        "showAttachments": true,
+        "expressionInfos": [
+          {
+            "name": "expr0",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.Alias_Mine_Names), \"\", \"Mine Aliases:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr1",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.MineStatus), \"\", \"Mine Status:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr2",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.PRPEnforceSettle), \"\", \"Enforcement Action:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr3",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.EnfEntity), \"\", \"Potentially Responsible Party:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr4",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.Region), \"\", \"AUM Region:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr5",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.LinktoEPA), \"\", \"Link to Webpage:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr6",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.SiteScreenReport), \"\", \"Site Screening Report:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr7",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.RemovalSiteEvalReport), \"\", \"Removal Site Evaluation Report:  \")\n",
+            "returnType": "string"
+          }
+        ],
+        "mediaInfos": []
+      }
+    },
+    {
+      "url": "https://gispub.epa.gov/arcgis/rest/services/Region9/NavajoNationAUMSiteScreening/MapServer/76",
+      "geometryType": "esriGeometryPoint",
+      "id": "NavajoNationAUMSiteScreeningContact_8355_76",
+      "layerId": "76",
+      "baseURL": "https://gispub.epa.gov/arcgis/rest/services/Region9/NavajoNationAUMSiteScreening/MapServer/",
+      "isMapServer": true,
+      "visibility": false,
+      "title": "Homestake Mining Company",
+      "popupInfo": {
+        "title": "{Mine_Name}",
+        "fieldInfos": [
+          {
+            "fieldName": "Shape",
+            "label": "Shape",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "EPA_Mine_Site_identification_nu",
+            "label": "Mine ID",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox",
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            }
+          },
+          {
+            "fieldName": "Mine_Name",
+            "label": "Mine Name",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Alias_Mine_Names",
+            "label": "Mine Aliases",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "MineStatus",
+            "label": "Mine Status",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "PRPEnforceSettle",
+            "label": "Enforcement Action",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "EnfEntity",
+            "label": "Potentially Responsible Party",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Region",
+            "label": "AUM Region",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "LinktoEPA",
+            "label": "Link to Webpage for",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "SiteScreenReport",
+            "label": "Site Screening Report",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "expression/expr0",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr1",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr2",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr3",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr4",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr5",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr6",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr7",
+            "visible": true
+          },
+          {
+            "fieldName": "RemovalSiteEvalReport",
+            "label": "Removal Site Evaluation Report",
+            "isEditable": false,
+            "visible": false,
+            "stringFieldOption": "textbox"
+          }
+        ],
+        "description": "<div>\n<b>{expression/expr0}<span>Other names that the mine is referred to.</span></b></div> {Alias_Mine_Names}<br />\n<div>\n<b>{expression/expr1}<span>Identifying if agreement to assess and cleanup the mine was through a enforcement action with a potentially responsible party or the name of the settlement or consent decree.</span></b></div> {MineStatus}<br />\n<b>{expression/expr2}</b> {PRPEnforceSettle}<br />\n<div>\n<b>{expression/expr3}<span>Any individual or company (including owners, operators, transporters or generators) potentially responsible for, or contributing to a spill or other contamination at a Superfund site. Whenever possible, through administrative and legal actions, EPA requires PRPs to clean up hazardous sites they have contaminated.</span></b></div> {EnfEntity}<br />\n<div>\n<b>{expression/expr4}<span>The abandoned uranium mines are scattered throughout the Navajo Nation. Based on the extent of the cleanup work and locations of the mines sites, EPA refers to the different regions where there are abandoned uranium mines as 'Abandoned Uranium Mine Regions' and divided it up into 6 different areas (Western, Northern, North Central, Central, Southern, and Eastern).</span></b></div> {Region}<br />\n<b>{expression/expr5}</b> {LinktoEPA}<br />\n<div>\n<b>{expression/expr6}<span>Preliminary site screen reports of the abandoned uranium mines on Navajo Nation were carried out from 2008-2011. The purpose of the site screen reports was to determine the status and location of identified AUM sites on Navajo Nation.</span></b></div> {SiteScreenReport}<br />\n<div>\n<b>{expression/expr7}<span>A report which provide information needed to determine the extent of contamination at a mine site.</span></b></div> {RemovalSiteEvalReport}",
+        "showAttachments": true,
+        "expressionInfos": [
+          {
+            "name": "expr0",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.Alias_Mine_Names), \"\", \"Mine Aliases:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr1",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.MineStatus), \"\", \"Mine Status:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr2",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.PRPEnforceSettle), \"\", \"Enforcement Action:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr3",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.EnfEntity), \"\", \"Potentially Responsible Party:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr4",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.Region), \"\", \"AUM Region:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr5",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.LinktoEPA), \"\", \"Link to Webpage:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr6",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.SiteScreenReport), \"\", \"Site Screening Report:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr7",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.RemovalSiteEvalReport), \"\", \"Removal Site Evaluation Report:  \")\n",
+            "returnType": "string"
+          }
+        ],
+        "mediaInfos": []
+      }
+    },
+    {
+      "url": "https://gispub.epa.gov/arcgis/rest/services/Region9/NavajoNationAUMSiteScreening/MapServer/75",
+      "geometryType": "esriGeometryPoint",
+      "id": "NavajoNationAUMSiteScreeningContact_8355_75",
+      "layerId": "75",
+      "baseURL": "https://gispub.epa.gov/arcgis/rest/services/Region9/NavajoNationAUMSiteScreening/MapServer/",
+      "isMapServer": true,
+      "visibility": false,
+      "title": "United Nuclear Corporation",
+      "popupInfo": {
+        "title": "{Mine_Name}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Shape",
+            "label": "Shape",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "EPA_Mine_Site_identification_nu",
+            "label": "Mine ID",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox",
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            }
+          },
+          {
+            "fieldName": "Mine_Name",
+            "label": "Mine Name",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Alias_Mine_Names",
+            "label": "Mine Aliases",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "MineStatus",
+            "label": "Mine Status",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "PRPEnforceSettle",
+            "label": "Enforcement Action",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "EnfEntity",
+            "label": "Potentially Responsible Party",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Region",
+            "label": "AUM Region",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "LinktoEPA",
+            "label": "Link to Webpage for",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "SiteScreenReport",
+            "label": "Site Screening Report",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "expression/expr0",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr1",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr2",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr3",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr4",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr5",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr6",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr7",
+            "visible": true
+          },
+          {
+            "fieldName": "RemovalSiteEvalReport",
+            "label": "Removal Site Evaluation Report",
+            "isEditable": false,
+            "visible": false,
+            "stringFieldOption": "textbox"
+          }
+        ],
+        "description": "<div>\n<b>{expression/expr0}<span>Other names that the mine is referred to.</span></b></div> {Alias_Mine_Names}<br />\n<div>\n<b>{expression/expr1}<span>Identifying if agreement to assess and cleanup the mine was through a enforcement action with a potentially responsible party or the name of the settlement or consent decree.</span></b></div> {MineStatus}<br />\n<b>{expression/expr2}</b> {PRPEnforceSettle}<br />\n<div>\n<b>{expression/expr3}<span>Any individual or company (including owners, operators, transporters or generators) potentially responsible for, or contributing to a spill or other contamination at a Superfund site. Whenever possible, through administrative and legal actions, EPA requires PRPs to clean up hazardous sites they have contaminated.</span></b></div> {EnfEntity}<br />\n<div>\n<b>{expression/expr4}<span>The abandoned uranium mines are scattered throughout the Navajo Nation. Based on the extent of the cleanup work and locations of the mines sites, EPA refers to the different regions where there are abandoned uranium mines as 'Abandoned Uranium Mine Regions' and divided it up into 6 different areas (Western, Northern, North Central, Central, Southern, and Eastern).</span></b></div> {Region}<br />\n<b>{expression/expr5}</b> {LinktoEPA}<br />\n<div>\n<b>{expression/expr6}<span>Preliminary site screen reports of the abandoned uranium mines on Navajo Nation were carried out from 2008-2011. The purpose of the site screen reports was to determine the status and location of identified AUM sites on Navajo Nation.</span></b></div> {SiteScreenReport}<br />\n<div>\n<b>{expression/expr7}<span>A report which provide information needed to determine the extent of contamination at a mine site.</span></b></div> {RemovalSiteEvalReport}",
+        "showAttachments": true,
+        "expressionInfos": [
+          {
+            "name": "expr0",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.Alias_Mine_Names), \"\", \"Mine Aliases:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr1",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.MineStatus), \"\", \"Mine Status:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr2",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.PRPEnforceSettle), \"\", \"Enforcement Action:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr3",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.EnfEntity), \"\", \"Potentially Responsible Party:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr4",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.Region), \"\", \"AUM Region:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr5",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.LinktoEPA), \"\", \"Link to Webpage:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr6",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.SiteScreenReport), \"\", \"Site Screening Report:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr7",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.RemovalSiteEvalReport), \"\", \"Removal Site Evaluation Report:  \")\n",
+            "returnType": "string"
+          }
+        ],
+        "mediaInfos": []
+      }
+    },
+    {
+      "url": "https://gispub.epa.gov/arcgis/rest/services/Region9/NavajoNationAUMSiteScreening/MapServer/74",
+      "geometryType": "esriGeometryPoint",
+      "id": "NavajoNationAUMSiteScreeningContact_8355_74",
+      "layerId": "74",
+      "baseURL": "https://gispub.epa.gov/arcgis/rest/services/Region9/NavajoNationAUMSiteScreening/MapServer/",
+      "isMapServer": true,
+      "visibility": false,
+      "title": "Wells Cargo Corporation",
+      "popupInfo": {
+        "title": "{Mine_Name}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Shape",
+            "label": "Shape",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "EPA_Mine_Site_identification_nu",
+            "label": "Mine ID",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox",
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            }
+          },
+          {
+            "fieldName": "Mine_Name",
+            "label": "Mine Name",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Alias_Mine_Names",
+            "label": "Mine Aliases",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "MineStatus",
+            "label": "Mine Status",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "PRPEnforceSettle",
+            "label": "Enforcement Action",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "EnfEntity",
+            "label": "Potentially Responsible Party",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Region",
+            "label": "AUM Region",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "LinktoEPA",
+            "label": "Link to Webpage for",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "SiteScreenReport",
+            "label": "Site Screening Report",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "expression/expr0",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr1",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr2",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr3",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr4",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr5",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr6",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr7",
+            "visible": true
+          },
+          {
+            "fieldName": "RemovalSiteEvalReport",
+            "label": "Removal Site Evaluation Report",
+            "isEditable": false,
+            "visible": false,
+            "stringFieldOption": "textbox"
+          }
+        ],
+        "description": "<div>\n<b>{expression/expr0}<span>Other names that the mine is referred to.</span></b></div> {Alias_Mine_Names}<br />\n<div>\n<b>{expression/expr1}<span>Identifying if agreement to assess and cleanup the mine was through a enforcement action with a potentially responsible party or the name of the settlement or consent decree.</span></b></div> {MineStatus}<br />\n<b>{expression/expr2}</b> {PRPEnforceSettle}<br />\n<div>\n<b>{expression/expr3}<span>Any individual or company (including owners, operators, transporters or generators) potentially responsible for, or contributing to a spill or other contamination at a Superfund site. Whenever possible, through administrative and legal actions, EPA requires PRPs to clean up hazardous sites they have contaminated.</span></b></div> {EnfEntity}<br />\n<div>\n<b>{expression/expr4}<span>The abandoned uranium mines are scattered throughout the Navajo Nation. Based on the extent of the cleanup work and locations of the mines sites, EPA refers to the different regions where there are abandoned uranium mines as 'Abandoned Uranium Mine Regions' and divided it up into 6 different areas (Western, Northern, North Central, Central, Southern, and Eastern).</span></b></div> {Region}<br />\n<b>{expression/expr5}</b> {LinktoEPA}<br />\n<div>\n<b>{expression/expr6}<span>Preliminary site screen reports of the abandoned uranium mines on Navajo Nation were carried out from 2008-2011. The purpose of the site screen reports was to determine the status and location of identified AUM sites on Navajo Nation.</span></b></div> {SiteScreenReport}<br />\n<div>\n<b>{expression/expr7}<span>A report which provide information needed to determine the extent of contamination at a mine site.</span></b></div> {RemovalSiteEvalReport}",
+        "showAttachments": true,
+        "expressionInfos": [
+          {
+            "name": "expr0",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.Alias_Mine_Names), \"\", \"Mine Aliases:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr1",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.MineStatus), \"\", \"Mine Status:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr2",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.PRPEnforceSettle), \"\", \"Enforcement Action:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr3",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.EnfEntity), \"\", \"Potentially Responsible Party:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr4",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.Region), \"\", \"AUM Region:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr5",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.LinktoEPA), \"\", \"Link to Webpage:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr6",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.SiteScreenReport), \"\", \"Site Screening Report:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr7",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.RemovalSiteEvalReport), \"\", \"Removal Site Evaluation Report:  \")\n",
+            "returnType": "string"
+          }
+        ],
+        "mediaInfos": []
+      }
+    },
+    {
+      "url": "https://gispub.epa.gov/arcgis/rest/services/Region9/NavajoNationAUMSiteScreening/MapServer/73",
+      "geometryType": "esriGeometryPoint",
+      "id": "NavajoNationAUMSiteScreeningContact_8355_73",
+      "layerId": "73",
+      "baseURL": "https://gispub.epa.gov/arcgis/rest/services/Region9/NavajoNationAUMSiteScreening/MapServer/",
+      "isMapServer": true,
+      "visibility": false,
+      "title": "Western Nuclear Inc.",
+      "popupInfo": {
+        "title": "{Mine_Name}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Shape",
+            "label": "Shape",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "EPA_Mine_Site_identification_nu",
+            "label": "Mine ID",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox",
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            }
+          },
+          {
+            "fieldName": "Mine_Name",
+            "label": "Mine Name",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Alias_Mine_Names",
+            "label": "Mine Aliases",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "MineStatus",
+            "label": "Mine Status",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "PRPEnforceSettle",
+            "label": "Enforcement Action",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "EnfEntity",
+            "label": "Potentially Responsible Party",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Region",
+            "label": "AUM Region",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "LinktoEPA",
+            "label": "Link to Webpage for",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "SiteScreenReport",
+            "label": "Site Screening Report",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "expression/expr0",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr1",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr2",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr3",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr4",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr5",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr6",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr7",
+            "visible": true
+          },
+          {
+            "fieldName": "RemovalSiteEvalReport",
+            "label": "Removal Site Evaluation Report",
+            "isEditable": false,
+            "visible": false,
+            "stringFieldOption": "textbox"
+          }
+        ],
+        "description": "<div>\n<b>{expression/expr0}<span>Other names that the mine is referred to.</span></b></div> {Alias_Mine_Names}<br />\n<div>\n<b>{expression/expr1}<span>Identifying if agreement to assess and cleanup the mine was through a enforcement action with a potentially responsible party or the name of the settlement or consent decree.</span></b></div> {MineStatus}<br />\n<b>{expression/expr2}</b> {PRPEnforceSettle}<br />\n<div>\n<b>{expression/expr3}<span>Any individual or company (including owners, operators, transporters or generators) potentially responsible for, or contributing to a spill or other contamination at a Superfund site. Whenever possible, through administrative and legal actions, EPA requires PRPs to clean up hazardous sites they have contaminated.</span></b></div> {EnfEntity}<br />\n<div>\n<b>{expression/expr4}<span>The abandoned uranium mines are scattered throughout the Navajo Nation. Based on the extent of the cleanup work and locations of the mines sites, EPA refers to the different regions where there are abandoned uranium mines as 'Abandoned Uranium Mine Regions' and divided it up into 6 different areas (Western, Northern, North Central, Central, Southern, and Eastern).</span></b></div> {Region}<br />\n<b>{expression/expr5}</b> {LinktoEPA}<br />\n<div>\n<b>{expression/expr6}<span>Preliminary site screen reports of the abandoned uranium mines on Navajo Nation were carried out from 2008-2011. The purpose of the site screen reports was to determine the status and location of identified AUM sites on Navajo Nation.</span></b></div> {SiteScreenReport}<br />\n<div>\n<b>{expression/expr7}<span>A report which provide information needed to determine the extent of contamination at a mine site.</span></b></div> {RemovalSiteEvalReport}",
+        "showAttachments": true,
+        "expressionInfos": [
+          {
+            "name": "expr0",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.Alias_Mine_Names), \"\", \"Mine Aliases:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr1",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.MineStatus), \"\", \"Mine Status:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr2",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.PRPEnforceSettle), \"\", \"Enforcement Action:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr3",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.EnfEntity), \"\", \"Potentially Responsible Party:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr4",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.Region), \"\", \"AUM Region:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr5",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.LinktoEPA), \"\", \"Link to Webpage:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr6",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.SiteScreenReport), \"\", \"Site Screening Report:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr7",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.RemovalSiteEvalReport), \"\", \"Removal Site Evaluation Report:  \")\n",
+            "returnType": "string"
+          }
+        ],
+        "mediaInfos": []
+      }
+    },
+    {
+      "url": "https://gispub.epa.gov/arcgis/rest/services/Region9/NavajoNationAUMSiteScreening/MapServer/44",
+      "geometryType": "esriGeometryPoint",
+      "id": "NavajoNationAUMSiteScreeningContact_8355_44",
+      "layerId": "44",
+      "baseURL": "https://gispub.epa.gov/arcgis/rest/services/Region9/NavajoNationAUMSiteScreening/MapServer/",
+      "isMapServer": true,
+      "visibility": true,
+      "title": "Other Abandoned Uranium Mines",
+      "popupInfo": {
+        "title": "{Mine_Name}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "EPA_Mine_ClaimsMineSiteIDnums",
+            "label": "Mine ID",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox",
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            }
+          },
+          {
+            "fieldName": "Shape",
+            "label": "Shape",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Mine_Name",
+            "label": "Mine Name",
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Alias_Mine_Names",
+            "label": "Mine Aliases",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "MineStatus",
+            "label": "Mine Status",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Region",
+            "label": "AUM Region",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "LinktoEPA",
+            "label": "Link to Webpage for",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "SiteScreenReport",
+            "label": "Site Screening Report",
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "expression/expr0",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr1",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr2",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr3",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr4",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr5",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr6",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr7",
+            "visible": true
+          },
+          {
+            "fieldName": "RemovalSiteEvalReport",
+            "label": "Removal Site Evaluation Report",
+            "isEditable": false,
+            "visible": false,
+            "stringFieldOption": "textbox"
+          }
+        ],
+        "description": "<div>\n<b>{expression/expr0}<span>Other names that the mine is referred to.</span></b></div> {Alias_Mine_Names}<br />\n<div>\n<b>{expression/expr4}<span>The abandoned uranium mines are scattered throughout the Navajo Nation. Based on the extent of the cleanup work and locations of the mines sites, EPA refers to the different regions where there are abandoned uranium mines as 'Abandoned Uranium Mine Regions' and divided it up into 6 different areas (Western, Northern, North Central, Central, Southern, and Eastern).</span></b></div> {Region}<br />\n<b>{expression/expr5}</b> {LinktoEPA}<br />\n<div>\n<b>{expression/expr6}<span>Preliminary site screen reports of the abandoned uranium mines on Navajo Nation were carried out from 2008-2011. The purpose of the site screen reports was to determine the status and location of identified AUM sites on Navajo Nation.</span></b></div> {SiteScreenReport}<br />\n<div>\n<b>{expression/expr7}<span>A report which provide information needed to determine the extent of contamination at a mine site.</span></b></div> {RemovalSiteEvalReport}",
+        "showAttachments": true,
+        "expressionInfos": [
+          {
+            "name": "expr0",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.Alias_Mine_Names), \"\", \"Mine Aliases:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr1",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.MineStatus), \"\", \"Mine Status:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr2",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.PRPEnforceSettle), \"\", \"Enforcement Action:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr3",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.EnfEntity), \"\", \"Potentially Responsible Party:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr4",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.Region), \"\", \"AUM Region:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr5",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.LinktoEPA), \"\", \"Link to Webpage:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr6",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.SiteScreenReport), \"\", \"Site Screening Report:  \")\n",
+            "returnType": "string"
+          },
+          {
+            "name": "expr7",
+            "title": "Custom",
+            "expression": "IIf(IsEmpty($feature.RemovalSiteEvalReport), \"\", \"Removal Site Evaluation Report:  \")\n",
+            "returnType": "string"
+          }
+        ],
+        "relatedRecordsInfo": {
+          "showRelatedRecords": false
+        },
+        "mediaInfos": []
+      }
+    }
+  ],
+  "bufferInfo": {
+    "isVisible": true
+  },
+  "defaultBufferDistance": 5,
+  "maxBufferDistance": 50,
+  "bufferDistanceUnit": {
+    "bufferUnit": "UNIT_STATUTE_MILE",
+    "routeUnit": "MILES",
+    "distanceUnit": "miles",
+    "label": "Miles",
+    "acronym": "mi",
+    "value": "miles"
+  },
+  "zoomToFeature": false,
+  "intersectSearchedLocation": true,
+  "enableProximitySearch": true,
+  "routeService": "https://route.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World",
+  "directionLengthUnit": {
+    "bufferUnit": "UNIT_STATUTE_MILE",
+    "routeUnit": "MILES",
+    "distanceUnit": "miles",
+    "label": "Miles",
+    "acronym": "mi",
+    "value": "miles"
+  },
+  "selectedSearchLayerOnly": true,
+  "isGeodesic": false,
+  "showLocationTool": true,
+  "symbols": {
+    "routeSymbol": {
+      "color": [
+        21,
+        99,
+        184,
+        255
+      ],
+      "width": 3.75,
+      "type": "esriSLS",
+      "style": "esriSLSSolid"
+    },
+    "graphicLocationSymbol": {
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 12,
+      "type": "esriPMS",
+      "url": "http://static.arcgis.com/images/Symbols/Basic/WhiteStickpin.png",
+      "imageData": "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",
+      "contentType": "image/png",
+      "width": 22.5,
+      "height": 22.5
+    },
+    "polylineSymbol": {
+      "color": [
+        21,
+        99,
+        184,
+        255
+      ],
+      "width": 3.75,
+      "type": "esriSLS",
+      "style": "esriSLSSolid"
+    },
+    "polygonSymbol": {
+      "color": [
+        255,
+        189,
+        1,
+        0
+      ],
+      "outline": {
+        "color": [
+          255,
+          189,
+          1,
+          255
+        ],
+        "width": 2.25,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      },
+      "type": "esriSFS",
+      "style": "esriSFSSolid"
+    },
+    "bufferSymbol": {
+      "color": [
+        0,
+        0,
+        0,
+        64
+      ],
+      "outline": {
+        "color": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "width": 1.5,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      },
+      "type": "esriSFS",
+      "style": "esriSFSSolid"
+    }
+  },
+  "maxResultCount": null,
+  "searchSourceSettings": {
+    "allPlaceholder": "Address, Place or Chapter",
+    "showInfoWindowOnSelect": true,
+    "sources": [
+      {
+        "layerId": "NavajoNationAUMSiteScreeningContact_8355_15",
+        "url": "https://gispub.epa.gov/arcgis/rest/services/Region9/NavajoNationAUMSiteScreening/MapServer/15",
+        "name": "Chapter Houses",
+        "placeholder": "",
+        "searchFields": [],
+        "displayField": "NAMES",
+        "exactMatch": false,
+        "searchInCurrentMapExtent": false,
+        "zoomScale": 50000,
+        "maxSuggestions": 6,
+        "maxResults": 6,
+        "type": "query"
+      },
+      {
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer",
+        "name": "ArcGIS World Geocoding Service",
+        "singleLineFieldName": "SingleLine",
+        "placeholder": "Address or Placename",
+        "countryCode": "USA",
+        "zoomScale": 50000,
+        "maxSuggestions": 6,
+        "maxResults": 6,
+        "searchInCurrentMapExtent": false,
+        "enableLocalSearch": true,
+        "localSearchMinScale": 300000,
+        "localSearchDistance": 50000,
+        "type": "locator"
+      }
+    ]
+  },
+  "attributeSymbology": {},
+  "filterSettings": {
+    "collapse": false,
+    "groupFiltersByLayer": false,
+    "filters": []
+  },
+  "showImageGallery": true,
+  "showFeaturesCount": true,
+  "editorDescription": "<b>Search for an Address, Chapter House,&nbsp;or set a location on the map.</b><br />Results are categorized by Mine Status or Potentially Responsible Party.",
+  "noFeatureFoundMessage": "<font size=\"4\">No mines found. Start a new search by adjusting the distance slider or provide a new location.</font>",
+  "showCurrentLocationTool": false
+}

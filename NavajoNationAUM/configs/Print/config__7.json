@@ -1,0 +1,9 @@
+{
+  "serviceURL": "https://gispub.epa.gov/arcgis/rest/services/PrintTools/ExportWebMap/GPServer/Export%20Web%20Map",
+  "defaultTitle": "Navajo Nation: Cleaning up Abandoned Uranium Mines",
+  "defaultAuthor": "US EPA Region 9",
+  "defaultCopyright": "US EPA",
+  "defaultFormat": "PDF",
+  "defaultLayout": "Letter ANSI A Landscape",
+  "copyrightEditable": true
+}

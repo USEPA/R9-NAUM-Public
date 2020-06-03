@@ -1,0 +1,141 @@
+{
+  "showTitle": true,
+  "showBasemap": false,
+  "showLegend": true,
+  "expandAllLayersByDefault": true,
+  "contextMenu": {
+    "ZoomTo": true,
+    "Transparency": true,
+    "SetVisibilityRange": true,
+    "EnableOrDisablePopup": true,
+    "ControlLabels": true,
+    "MoveupOrMovedown": true,
+    "OpenAttributeTable": true,
+    "DescriptionOrShowItemDetailsOrDownload": true
+  },
+  "layerOptions": {
+    "NavajoNationAUMSiteScreeningContact_8355": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_40": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_82": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_45": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_42": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_43": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_41": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_72": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_81": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_80": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_79": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_78": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_77": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_76": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_75": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_74": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_73": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_44": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_58": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_50": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_56": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_67": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_46": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_51": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_52": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_53": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_91": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_85": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_87": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_95": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_92": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_93": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_88": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_89": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_90": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_86": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_57": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_25": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_15": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_94": {
+      "display": true
+    },
+    "NavajoNationAUMSiteScreeningContact_8355_18": {
+      "display": true
+    }
+  }
+}

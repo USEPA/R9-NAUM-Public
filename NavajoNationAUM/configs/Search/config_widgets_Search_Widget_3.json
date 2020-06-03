@@ -1,0 +1,49 @@
+{
+  "allPlaceholder": "Find Mines and Chapters",
+  "showInfoWindowOnSelect": false,
+  "sources": [
+    {
+      "layerId": "NavajoNationAUMSiteScreeningContact_8355_15",
+      "url": "https://gispub.epa.gov/arcgis/rest/services/Region9/NavajoNationAUMSiteScreening/MapServer/15",
+      "name": "Chapter Houses",
+      "placeholder": "",
+      "searchFields": [
+        "NAMES",
+        "Agency"
+      ],
+      "displayField": "NAMES",
+      "exactMatch": false,
+      "searchInCurrentMapExtent": false,
+      "panToScale": false,
+      "zoomScale": null,
+      "maxSuggestions": 6,
+      "maxResults": 6,
+      "type": "query"
+    },
+    {
+      "layerId": "NavajoNationAUMSiteScreeningContact_8355_50",
+      "url": "https://gispub.epa.gov/arcgis/rest/services/Region9/NavajoNationAUMSiteScreening/MapServer/50",
+      "name": "All Mines",
+      "placeholder": "",
+      "searchFields": [
+        "Mine_ID",
+        "Mine_Name",
+        "Aliases",
+        "MineNameAlias",
+        "PRPEnforceSettle",
+        "EnfEntity",
+        "MineStatus",
+        "MineStatusAlt"
+      ],
+      "displayField": "Mine_Name",
+      "suggestionTemplate": "${Mine_Name}, ${Aliases}",
+      "exactMatch": false,
+      "searchInCurrentMapExtent": false,
+      "panToScale": false,
+      "zoomScale": 80000,
+      "maxSuggestions": 20,
+      "maxResults": 20,
+      "type": "query"
+    }
+  ]
+}
